@@ -1,4 +1,4 @@
-package com.example.asiagibson.mypath;
+package com.example.asiagibson.mypath.fragments;
 
 import android.app.Fragment;
 import android.os.Bundle;
@@ -11,6 +11,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Toast;
 
+import com.example.asiagibson.mypath.R;
+import com.example.asiagibson.mypath.YaipResponse;
 import com.example.asiagibson.mypath.model.Location;
 import com.example.asiagibson.mypath.rv.YaipAdapter;
 
