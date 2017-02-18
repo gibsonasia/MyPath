@@ -7,6 +7,8 @@
     android:orientation="vertical"
     tools:context="com.example.asiagibson.mypath.MainActivity">
 
+</RelativeLayout>
+
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -168,3 +170,4 @@
             android:text="@string/submit_text"/>
     </LinearLayout>
 </LinearLayout>
+
