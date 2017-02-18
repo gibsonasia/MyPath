@@ -3,8 +3,22 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+
+    <color name="blue" type="color">#FF33B5E5</color>
+    <color name="purple" type="color">#FFAA66CC</color>
+    <color name="green" type="color">#FF99CC00</color>
+    <color name="orange" type="color">#FFFFBB33</color>
+    <color name="red" type="color">#FFFF4444</color>
+    <color name="darkblue" type="color">#FF0099CC</color>
+    <color name="darkpurple" type="color">#FF9933CC</color>
+    <color name="darkgreen" type="color">#FF669900</color>
+    <color name="darkorange" type="color">#FFFF8800</color>
+    <color name="darkred" type="color">#FFCC0000</color>
+    <color name="colorWhite">#FFFFFF</color>
+
     <color name="yellow">#fcfc0e</color>
     <color name="green">#78cf15</color>
     <color name="blue">#1d9cc2</color>
     <color name="red">#f20f26</color>
+
 </resources>
