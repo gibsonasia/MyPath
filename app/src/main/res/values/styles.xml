@@ -17,7 +17,8 @@
 
     <style name="spinner_dropdown_style_theme1" parent="Widget.AppCompat.DropDownItem.Spinner">
         <item name="android:textColor">@android:color/white</item>
-        <item name="android:background">@color/green</item>
+        <item name="android:background">@color/black_translucent</item>
+                <item name="backgroundTint">@color/colorWhite</item>
     </style>
 
     <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
