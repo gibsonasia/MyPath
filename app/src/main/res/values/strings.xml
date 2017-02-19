@@ -1,3 +1,43 @@
 <resources>
     <string name="app_name">MyPath</string>
+    <string name="age">Age</string>
+    <string name="education_status">Education Status</string>
+    <string name="citizen">Citizen</string>
+    <string name="immigrant">Immigrant</string>
+    <string name="yes">YES</string>
+    <string name="no">NO</string>
+    <string name="visa_button">Visa</string>
+    <string name="greenCard_button">Green Card</string>
+    <string name="question_mark_text">Why do we need this information</string>
+    <string name="main_activity_text">Tell us a little about yourself:</string>
+    <string name="drop_down_prompt">--Select--</string>
+    <string name="submit_text">SUBMIT</string>
+    <string name="valid_inputs">Please ensure that all fields are entered</string>
+    <string name="question_icon_text">All data collected is used solely to filter results to match your interests</string>
+
+    <string-array name="age_array">
+        <item>--Select--</item>
+        <item>16-24</item>
+        <item>25+</item>
+        <!--<item>Earth</item>-->
+        <!--<item>Mars</item>-->
+    </string-array>
+
+    <string-array name="education_array">
+        <item>--Select--</item>
+        <item>GED</item>
+        <item>High School Diploma</item>
+        <item>Some College</item>
+        <!--<item>Mars</item>-->
+    </string-array>
+    <string name="title_activity_spinner">SpinnerActivity</string>
+    <string name="isUnder25_ID">isUnder25</string>
+    <string name="isOver25_ID">isOver25_ID</string>
+    <string name="hasGed_id">hasGed_ID</string>
+    <string name="hasHighSchool_id">hasHighSchool_ID</string>
+    <string name="hasSomeCollege_id">hasSomeCollege_ID</string>
+    <string name="isCitizen_id">isCitizen_ID</string>
+    <string name="hasGreenCard_id">hasGreenCard_ID</string>
+    <string name="hasVisa_id">hasVisa_ID</string>
+
 </resources>
