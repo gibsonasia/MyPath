@@ -16,6 +16,7 @@
 
         <activity android:name=".ThirdActivity">
         </activity>
+        <activity android:name=".SplashScreenActivity"/>
         <activity android:name=".activities.MainActivity">
 
             <intent-filter>
@@ -33,7 +34,6 @@
 
         <activity android:name=".FiveBorough"></activity>
 
-        <activity android:name=".Main2Activity"></activity>
 
     </application>
 
