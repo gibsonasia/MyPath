@@ -8,11 +8,12 @@
     <string name="no">NO</string>
     <string name="visa_button">Visa</string>
     <string name="greenCard_button">Green Card</string>
-    <string name="question_mark_text">Why do we need this information</string>
+    <string name="question_mark_text">Why do we need this information ?</string>
     <string name="main_activity_text">Tell us a little about yourself:</string>
     <string name="drop_down_prompt">--Select--</string>
     <string name="submit_text">SUBMIT</string>
     <string name="valid_inputs">Please ensure that all fields are entered</string>
+    <string name="app_name_">My Path</string>
     <string name="question_icon_text">All data collected is used solely to filter results to match your interests</string>
 
     <string-array name="age_array">
