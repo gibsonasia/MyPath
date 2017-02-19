@@ -126,7 +126,7 @@ public class HomeScreenActivity extends AppCompatActivity {
         yesButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                yesButton.setBackgroundColor(Color.parseColor("green"));
+                yesButton.setBackgroundColor(getResources().getColor(R.color.blue));
                 isCitizen = true;
                 noButton.setVisibility(View.GONE);
                 nothingSelected3 = false;
@@ -136,7 +136,7 @@ public class HomeScreenActivity extends AppCompatActivity {
         noButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                noButton.setBackgroundColor(Color.parseColor("green"));
+                noButton.setBackgroundColor(getResources().getColor(R.color.blue));
                 yesButton.setVisibility(View.GONE);
                 visaButton.setVisibility(View.VISIBLE);
                 greenCardButton.setVisibility(View.VISIBLE);
