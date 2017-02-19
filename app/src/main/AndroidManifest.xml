@@ -27,7 +27,7 @@
 
         <activity android:name=".activities.YaipDataActivity" />
 
-        <!--<activity android:name=".activities.EsllActivity" />-->
+        <activity android:name=".activities.EsllActivity" />
 
 
 
