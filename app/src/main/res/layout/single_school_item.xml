@@ -4,43 +4,67 @@
     android:layout_height="wrap_content"
     android:layout_marginBottom="10dp"
     android:background="@drawable/single_item_style"
-    android:orientation="vertical"
+    android:orientation="horizontal"
     android:padding="10dp">
 
-    <TextView
-        android:id="@+id/tv_program_site_name"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Program site name"
-        android:textStyle="bold"
-        android:textSize="20dp"
-        android:textColor="@color/colorWhite"
-        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/tv_address"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Address"
-        android:textStyle="bold"
-        android:textSize="20dp"
-        android:textColor="@color/colorWhite" />
+        <TextView
+            android:id="@+id/tv_program_site_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Program site name"
+            android:textColor="@color/colorWhite"
+            android:textSize="20dp"
+            android:textStyle="bold" />
 
-    <TextView
-        android:id="@+id/tv_contact_number"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Contact number"
-        android:textStyle="bold"
-        android:textSize="20dp"
-        android:textColor="@color/colorWhite" />
+        <TextView
+            android:id="@+id/tv_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Address"
+            android:textColor="@color/colorWhite"
+            android:textSize="20dp"
+            android:textStyle="bold" />
 
-    <TextView
-        android:id="@+id/tv_borough"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Borough"
-        android:textStyle="bold"
-        android:textSize="20dp"
-        android:textColor="@color/colorWhite" />
+        <TextView
+            android:id="@+id/tv_contact_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Contact number"
+            android:autoLink="phone"
+            android:textColorLink="@color/light_blue"
+            android:textColor="@color/colorWhite"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_borough"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Borough"
+            android:textColor="@color/colorWhite"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="6"
+        android:gravity="center_vertical">
+
+        <ImageButton
+            android:id="@+id/btn_call"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/btn_call_style"
+            android:scaleType="fitXY"
+            android:src="@drawable/call" />
+    </LinearLayout>
 </LinearLayout>

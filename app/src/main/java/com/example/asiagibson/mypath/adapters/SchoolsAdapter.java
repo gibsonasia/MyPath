@@ -58,7 +58,7 @@ public class SchoolsAdapter extends RecyclerView.Adapter<SchoolsAdapter.SchoolVH
     }
 
 
-    public class SchoolVHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
+    public class SchoolVHolder extends RecyclerView.ViewHolder {
         private Schools school;
         TextView mTvAddress, mTvBorough, mTvContactNumber, mTvProgramSiteName;
 
@@ -70,25 +70,26 @@ public class SchoolsAdapter extends RecyclerView.Adapter<SchoolsAdapter.SchoolVH
             mTvBorough = (TextView) itemView.findViewById(R.id.tv_borough);
             mTvContactNumber = (TextView) itemView.findViewById(R.id.tv_contact_number);
             mTvProgramSiteName = (TextView) itemView.findViewById(R.id.tv_program_site_name);
-            itemView.setOnClickListener(this);
 
         }
 
         public void bind(Schools schools) {
             school = schools;
             mTvAddress.setText(schools.getAddress());
+            mTvAddress.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    String formattedAddress = "geo:0,0?q=" + school.getAddress().replaceAll(" ", "+");
+                    Uri uri = Uri.parse(formattedAddress);
+                    Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+                    view.getContext().startActivity(intent);
+                }
+            });
             mTvBorough.setText(schools.getBorough());
             mTvContactNumber.setText(schools.getContact_number());
             mTvProgramSiteName.setText(schools.getProgram_site_name());
 
         }
 
-        @Override
-        public void onClick(View view) {
-            String formattedAddress = "geo:0,0?q=" + school.getAddress().replaceAll(" ", "+");
-            Uri uri = Uri.parse(formattedAddress);
-            Intent intent = new Intent(Intent.ACTION_VIEW, uri);
-            context.startActivity(intent);
-        }
     }
 }
