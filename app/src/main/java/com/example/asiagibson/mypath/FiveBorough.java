@@ -5,6 +5,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
+import com.example.asiagibson.mypath.activities.YaipDataActivity;
+import com.example.asiagibson.mypath.models.Schools;
+
 /**
  * Created by Nesada Koca on 2/18/2017.
  */
@@ -17,11 +20,12 @@ public class FiveBorough extends AppCompatActivity {
         setContentView(R.layout.activity_five_borough);
     }
 
-    public void onClickButtons(View v){
+    public void onClickButtons(View v) {
 
         Intent intent = new Intent(this, SchoolsActivity.class);
+        switch (v.getId()) {
 
-        switch (v.getId()){
+
 
             case R.id.manhattan:
                 intent.putExtra("borough", "Manhattan");
