@@ -1,13 +1,16 @@
 package com.example.asiagibson.mypath.adapters;
 
+import android.content.Context;
+import android.content.Intent;
+import android.net.Uri;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import com.example.asiagibson.mypath.models.Schools;
 import com.example.asiagibson.mypath.R;
+import com.example.asiagibson.mypath.models.Schools;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -18,10 +21,12 @@ import java.util.List;
 
 public class SchoolsAdapter extends RecyclerView.Adapter<SchoolsAdapter.SchoolVHolder> {
 
+    private Context context;
 
     List<Schools> schoolsList;
 
-    public SchoolsAdapter() {
+    public SchoolsAdapter(Context context) {
+        this.context = context;
         schoolsList = new ArrayList<>();
     }
 
@@ -43,7 +48,6 @@ public class SchoolsAdapter extends RecyclerView.Adapter<SchoolsAdapter.SchoolVH
     public void onBindViewHolder(SchoolVHolder holder, int position) {
 
         Schools schools = schoolsList.get(position);
-
         holder.bind(schools);
 
     }
@@ -54,27 +58,37 @@ public class SchoolsAdapter extends RecyclerView.Adapter<SchoolsAdapter.SchoolVH
     }
 
 
-    public class SchoolVHolder extends RecyclerView.ViewHolder {
-
-        TextView mTv1, mTv2, mTv3, mTv4;
+    public class SchoolVHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
+        private Schools school;
+        TextView mTvAddress, mTvBorough, mTvContactNumber, mTvProgramSiteName;
 
 
         public SchoolVHolder(View itemView) {
             super(itemView);
 
-            mTv1 = (TextView) itemView.findViewById(R.id.tv1);
-            mTv2 = (TextView) itemView.findViewById(R.id.tv2);
-            mTv3 = (TextView) itemView.findViewById(R.id.tv3);
-            mTv4 = (TextView) itemView.findViewById(R.id.tv4);
+            mTvAddress = (TextView) itemView.findViewById(R.id.tv_address);
+            mTvBorough = (TextView) itemView.findViewById(R.id.tv_borough);
+            mTvContactNumber = (TextView) itemView.findViewById(R.id.tv_contact_number);
+            mTvProgramSiteName = (TextView) itemView.findViewById(R.id.tv_program_site_name);
+            itemView.setOnClickListener(this);
+
         }
 
         public void bind(Schools schools) {
+            school = schools;
+            mTvAddress.setText(schools.getAddress());
+            mTvBorough.setText(schools.getBorough());
+            mTvContactNumber.setText(schools.getContact_number());
+            mTvProgramSiteName.setText(schools.getProgram_site_name());
 
-            mTv1.setText(schools.getAddress());
-            mTv2.setText(schools.getBorough());
-            mTv3.setText(schools.getContact_number());
-            mTv4.setText(schools.getProgram_site_name());
+        }
 
+        @Override
+        public void onClick(View view) {
+            String formattedAddress = "geo:0,0?q=" + school.getAddress().replaceAll(" ", "+");
+            Uri uri = Uri.parse(formattedAddress);
+            Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+            context.startActivity(intent);
         }
     }
 }

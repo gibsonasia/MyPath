@@ -8,38 +8,38 @@
     android:padding="10dp">
 
     <TextView
-        android:id="@+id/tv4"
+        android:id="@+id/tv_program_site_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="text 4"
+        android:text="Program site name"
         android:textStyle="bold"
         android:textSize="20dp"
         android:textColor="@color/colorWhite"
         />
 
     <TextView
-        android:id="@+id/tv1"
+        android:id="@+id/tv_address"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="text 1"
+        android:text="Address"
         android:textStyle="bold"
         android:textSize="20dp"
         android:textColor="@color/colorWhite" />
 
     <TextView
-        android:id="@+id/tv3"
+        android:id="@+id/tv_contact_number"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="text 3"
+        android:text="Contact number"
         android:textStyle="bold"
         android:textSize="20dp"
         android:textColor="@color/colorWhite" />
 
     <TextView
-        android:id="@+id/tv2"
+        android:id="@+id/tv_borough"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="text 2"
+        android:text="Borough"
         android:textStyle="bold"
         android:textSize="20dp"
         android:textColor="@color/colorWhite" />

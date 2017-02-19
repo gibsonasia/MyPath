@@ -9,7 +9,7 @@
 
     android:orientation="vertical"
 
-    tools:context="com.example.asiagibson.mypath.MainActivity">
+    tools:context="com.example.asiagibson.mypath.Main2Activity">
 
 
     <ImageView
