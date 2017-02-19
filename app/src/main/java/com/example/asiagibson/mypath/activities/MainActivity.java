@@ -94,12 +94,12 @@ public class MainActivity extends AppCompatActivity {
                 String educationInput = parent.getItemAtPosition(position).toString();
 
                 switch (educationInput) {
-                    case "GED":
+                    case "No GED/HS":
                         Log.d("GED", "Chosen");
                         hasGed = true;
                         nothingSelected2 = false;
                         break;
-                    case "High School Diploma":
+                    case "GED/High School Diploma":
                         Log.d("HSD", "Chosen");
                         hasHighSchool = true;
                         nothingSelected2 = false;
@@ -189,6 +189,7 @@ public class MainActivity extends AppCompatActivity {
 
                     intent.putExtras(bundle);
                     startActivity(intent);
+
                 }
             }
         });
