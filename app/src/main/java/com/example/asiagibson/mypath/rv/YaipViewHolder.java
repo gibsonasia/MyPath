@@ -28,7 +28,7 @@ public class YaipViewHolder extends RecyclerView.ViewHolder {
 
         textView.setText(location.getProgram_type());
         mTv2.setText(location.getGrade_level_age_group());
-        mTv3.setText(location.getAgency());
+        mTv3.setText(location.getBorough_community());
 
     }
 }
