@@ -23,7 +23,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
  * Created by Nesada Koca on 2/18/2017.
  */
 
-public class ThirdActivity extends AppCompatActivity {
+public class SchoolsActivity extends AppCompatActivity {
 
     private RecyclerView mRvInfo;
     private SchoolsAdapter mSchoolsAdapter;
@@ -48,7 +48,7 @@ public class ThirdActivity extends AppCompatActivity {
 
     public void setUpAdapter() {
 
-        mSchoolsAdapter = new SchoolsAdapter();
+        mSchoolsAdapter = new SchoolsAdapter(getBaseContext());
 
         mRvInfo.setAdapter(mSchoolsAdapter);
         mRvInfo.setHasFixedSize(true);
