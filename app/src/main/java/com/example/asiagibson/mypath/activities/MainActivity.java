@@ -1,4 +1,4 @@
-package com.example.asiagibson.mypath;
+package com.example.asiagibson.mypath.activities;
 
 import android.content.Intent;
 import android.graphics.Color;
@@ -14,6 +14,9 @@ import android.widget.RadioButton;
 import android.widget.Spinner;
 import android.widget.SpinnerAdapter;
 import android.widget.Toast;
+
+import com.example.asiagibson.mypath.FiveBorough;
+import com.example.asiagibson.mypath.R;
 
 public class MainActivity extends AppCompatActivity {
     Spinner ageSpinner;

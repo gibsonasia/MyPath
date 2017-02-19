@@ -26,8 +26,8 @@
 
     <string-array name="education_array">
         <item>--Select--</item>
-        <item>GED</item>
-        <item>High School Diploma</item>
+        <item>No GED/HS</item>
+        <item>GED/High School Diploma</item>
         <item>Some College</item>
         <!--<item>Mars</item>-->
     </string-array>

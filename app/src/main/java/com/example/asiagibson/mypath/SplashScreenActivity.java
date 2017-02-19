@@ -8,6 +8,8 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 
+import com.example.asiagibson.mypath.activities.MainActivity;
+
 public class SplashScreenActivity extends AppCompatActivity {
 
     @Override
@@ -29,7 +31,7 @@ public class SplashScreenActivity extends AppCompatActivity {
                 finish();
 //
             }
-        }, 10000);
+        }, 8000);
 
 
 
