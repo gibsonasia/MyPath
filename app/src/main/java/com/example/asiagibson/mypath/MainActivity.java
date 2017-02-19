@@ -24,14 +24,14 @@ public class MainActivity extends AppCompatActivity {
     RadioButton visaButton;
     RadioButton greenCardButton;
     ImageView questionImage;
-    Boolean isUnder25;
-    Boolean isOver25;
-    Boolean hasGed;
-    Boolean hasHighSchool;
-    Boolean hasSomeCollege;
-    Boolean isCitizen;
-    Boolean hasGreenCard;
-    Boolean hasVisa;
+    Boolean isUnder25=false;
+    Boolean isOver25=false;
+    Boolean hasGed=false;
+    Boolean hasHighSchool=false;
+    Boolean hasSomeCollege=false;
+    Boolean isCitizen=false;
+    Boolean hasGreenCard=false;
+    Boolean hasVisa=false;
     Boolean nothingSelected;
     Boolean nothingSelected2;
     Boolean nothingSelected3 = true;
@@ -173,7 +173,7 @@ submitButton.setOnClickListener(new View.OnClickListener() {
             Toast.makeText(submitButton.getContext(),R.string.valid_inputs,Toast.LENGTH_LONG).show();
         }
         else{
-            Intent intent = new Intent(getBaseContext(), Main2Activity.class);
+            Intent intent = new Intent(getBaseContext(), FiveBorough.class);
             Bundle bundle = new Bundle();
             bundle.putBoolean(getResources().getString(R.string.isUnder25_ID), isUnder25);
             bundle.putBoolean(getResources().getString(R.string.isOver25_ID),isOver25);
