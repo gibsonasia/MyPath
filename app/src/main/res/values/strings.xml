@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">MyPath</string>
+    <string name="age">Age</string>
+    <string name="education_status">Education Status</string>
+    <string name="citizen">Citizen</string>
+    <string name="immigrant">Immigrant</string>
+    <string name="yes">YES</string>
+    <string name="no">NO</string>
+    <string name="visa_button">Visa</string>
+    <string name="greenCard_button">Green Card</string>
 </resources>
