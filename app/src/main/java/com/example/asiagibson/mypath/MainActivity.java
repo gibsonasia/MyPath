@@ -3,6 +3,9 @@ package com.example.asiagibson.mypath;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
+/**
+ * Created by Nesada Koca on 2/18/2017.
+ */
 public class MainActivity extends AppCompatActivity {
 
     @Override
