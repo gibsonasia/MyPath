@@ -5,6 +5,7 @@
     <color name="colorAccent">#FF4081</color>
 
     <color name="blue" type="color">#FF33B5E5</color>
+    <color name="light_blue">#4bb6d6</color>
     <color name="purple" type="color">#FFAA66CC</color>
     <color name="green" type="color">#FF99CC00</color>
     <color name="orange" type="color">#FFFFBB33</color>
@@ -15,7 +16,10 @@
     <color name="darkorange" type="color">#FFFF8800</color>
     <color name="darkred" type="color">#FFCC0000</color>
     <color name="colorWhite">#FFFFFF</color>
-
     <color name="yellow">#fcfc0e</color>
+
+    <color name="black">#030303</color>
+    <color name="black_translucent">#55000000</color>
+    <color name="greys">#d6d2d0d0</color>
 
 </resources>
