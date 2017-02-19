@@ -19,7 +19,7 @@ public class FiveBorough extends AppCompatActivity {
 
     public void onClickButtons(View v){
 
-        Intent intent = new Intent(this, ThirdActivity.class);
+        Intent intent = new Intent(this, SchoolsActivity.class);
 
         switch (v.getId()){
 

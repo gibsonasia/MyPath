@@ -186,7 +186,7 @@ submitButton.setOnClickListener(new View.OnClickListener() {
                 Intent intent = new Intent(submitButton.getContext(),EsllActivity.class);
                 startActivity(intent);
             }
-//            Intent intent = new Intent(getBaseContext(), FiveBorough.class);
+            Intent intent = new Intent(getBaseContext(), FiveBorough.class);
 //            Bundle bundle = new Bundle();
 //            bundle.putBoolean(getResources().getString(R.string.isUnder25_ID), isUnder25);
 //            bundle.putBoolean(getResources().getString(R.string.isOver25_ID),isOver25);
@@ -199,7 +199,7 @@ submitButton.setOnClickListener(new View.OnClickListener() {
 //            bundle.putBoolean(getResources().getString(R.string.isOver25_ID),isOver25);
 //
 //            intent.putExtras(bundle);
-//            startActivity(intent);
+            startActivity(intent);
         }
 
 
