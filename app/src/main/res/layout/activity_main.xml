@@ -8,7 +8,6 @@
 
     tools:context="com.example.asiagibson.mypath.MainActivity">
 
-</RelativeLayout>
 
     <ImageView
         android:layout_width="match_parent"
