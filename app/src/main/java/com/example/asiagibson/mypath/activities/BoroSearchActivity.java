@@ -6,8 +6,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
 import com.example.asiagibson.mypath.R;
-import com.example.asiagibson.mypath.ThirdActivity;
-import com.example.asiagibson.mypath.rv.YaipAdapter;
 
 /**
  * Created by asiagibson on 2/19/17.
