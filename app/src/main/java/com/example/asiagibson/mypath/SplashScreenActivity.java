@@ -8,7 +8,7 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 
-import com.example.asiagibson.mypath.activities.MainActivity;
+import com.example.asiagibson.mypath.activities.HomeScreenActivity;
 
 public class SplashScreenActivity extends AppCompatActivity {
 
@@ -27,7 +27,7 @@ public class SplashScreenActivity extends AppCompatActivity {
         handler.postDelayed(new Runnable() {
             @Override
             public void run() {
-                startActivity(new Intent(SplashScreenActivity.this, MainActivity.class));
+                startActivity(new Intent(SplashScreenActivity.this, HomeScreenActivity.class));
                 finish();
 //
             }

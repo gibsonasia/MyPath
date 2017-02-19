@@ -10,7 +10,7 @@
 
     android:orientation="vertical"
 
-    tools:context="com.example.asiagibson.mypath.activities.MainActivity">
+    tools:context="com.example.asiagibson.mypath.activities.HomeScreenActivity">
 
 
     <ImageView

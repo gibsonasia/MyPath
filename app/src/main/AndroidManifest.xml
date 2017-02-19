@@ -16,7 +16,7 @@
 
         <activity android:name=".ThirdActivity">
         </activity>
-        <activity android:name=".activities.MainActivity"/>
+        <activity android:name=".activities.HomeScreenActivity"/>
             <activity android:name=".SplashScreenActivity">
 
             <intent-filter>

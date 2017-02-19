@@ -18,7 +18,7 @@ import android.widget.Toast;
 import com.example.asiagibson.mypath.FiveBorough;
 import com.example.asiagibson.mypath.R;
 
-public class MainActivity extends AppCompatActivity {
+public class HomeScreenActivity extends AppCompatActivity {
     Spinner ageSpinner;
     Spinner educationSpinner;
     Button yesButton;
@@ -29,8 +29,8 @@ public class MainActivity extends AppCompatActivity {
     ImageView questionImage;
     Boolean isUnder25=false;
     Boolean isOver25=false;
-    Boolean hasGed=false;
-    Boolean hasHighSchool=false;
+    Boolean hasNoGed =false;
+    Boolean hasHighSchoolOrGed =false;
     Boolean hasSomeCollege=false;
     Boolean isCitizen=false;
     Boolean hasGreenCard=false;
@@ -42,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.home_screen_layout);
         ageSpinner = (Spinner) findViewById(R.id.age_spinner);
         educationSpinner = (Spinner) findViewById(R.id.education_spinner);
         yesButton = (Button) findViewById(R.id.yes_button);
@@ -96,12 +96,12 @@ public class MainActivity extends AppCompatActivity {
                 switch (educationInput) {
                     case "No GED/HS":
                         Log.d("GED", "Chosen");
-                        hasGed = true;
+                        hasNoGed = true;
                         nothingSelected2 = false;
                         break;
                     case "GED/High School Diploma":
                         Log.d("HSD", "Chosen");
-                        hasHighSchool = true;
+                        hasHighSchoolOrGed = true;
                         nothingSelected2 = false;
                         break;
                     case "Some College":
@@ -176,21 +176,33 @@ submitButton.setOnClickListener(new View.OnClickListener() {
             Toast.makeText(submitButton.getContext(),R.string.valid_inputs,Toast.LENGTH_LONG).show();
         }
         else{
-            Intent intent = new Intent(getBaseContext(), FiveBorough.class);
-            Bundle bundle = new Bundle();
-            bundle.putBoolean(getResources().getString(R.string.isUnder25_ID), isUnder25);
-            bundle.putBoolean(getResources().getString(R.string.isOver25_ID),isOver25);
-            bundle.putBoolean(getResources().getString(R.string.hasGed_id),hasGed);
-            bundle.putBoolean(getResources().getString(R.string.hasHighSchool_id),hasHighSchool);
-            bundle.putBoolean(getResources().getString(R.string.hasSomeCollege_id),hasSomeCollege);
-            bundle.putBoolean(getResources().getString(R.string.isCitizen_id),isCitizen);
-            bundle.putBoolean(getResources().getString(R.string.hasVisa_id),hasVisa);
-            bundle.putBoolean(getResources().getString(R.string.hasGreenCard_id),hasGreenCard);
-            bundle.putBoolean(getResources().getString(R.string.isOver25_ID),isOver25);
 
-            intent.putExtras(bundle);
-            startActivity(intent);
+            if(hasNoGed && isUnder25){
+                Intent intent = new Intent(getBaseContext(),YaipDataActivity.class);
+                startActivity(intent);
+            }
+
+            else if((!hasNoGed)&&isOver25&&(!isCitizen)){
+                Intent intent = new Intent(submitButton.getContext(),EsllActivity.class);
+                startActivity(intent);
+            }
+//            Intent intent = new Intent(getBaseContext(), FiveBorough.class);
+//            Bundle bundle = new Bundle();
+//            bundle.putBoolean(getResources().getString(R.string.isUnder25_ID), isUnder25);
+//            bundle.putBoolean(getResources().getString(R.string.isOver25_ID),isOver25);
+//            bundle.putBoolean(getResources().getString(R.string.hasGed_id), hasNoGed);
+//            bundle.putBoolean(getResources().getString(R.string.hasHighSchool_id), hasHighSchoolOrGed);
+//            bundle.putBoolean(getResources().getString(R.string.hasSomeCollege_id),hasSomeCollege);
+//            bundle.putBoolean(getResources().getString(R.string.isCitizen_id),isCitizen);
+//            bundle.putBoolean(getResources().getString(R.string.hasVisa_id),hasVisa);
+//            bundle.putBoolean(getResources().getString(R.string.hasGreenCard_id),hasGreenCard);
+//            bundle.putBoolean(getResources().getString(R.string.isOver25_ID),isOver25);
+//
+//            intent.putExtras(bundle);
+//            startActivity(intent);
         }
+
+
     }
 });
     }
