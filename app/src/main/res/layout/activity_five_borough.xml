@@ -29,7 +29,9 @@
                 android:background="@drawable/single_item_style"
                 android:onClick="onClickButtons"
                 android:text="Manhattan"
-                android:textColor="@color/colorWhite" />
+                android:textColor="@color/colorWhite"
+                android:textStyle="bold"
+                android:textSize="25dp"/>
 
 
         </LinearLayout>
@@ -48,7 +50,9 @@
                 android:background="@drawable/single_item_style"
                 android:onClick="onClickButtons"
                 android:text="Brooklyn"
-                android:textColor="@color/colorWhite" />
+                android:textColor="@color/colorWhite"
+                android:textStyle="bold"
+                android:textSize="25dp"/>
 
             <Button
                 android:id="@+id/queens"
@@ -59,6 +63,8 @@
                 android:background="@drawable/single_item_style"
                 android:onClick="onClickButtons"
                 android:text="Queens"
+                android:textStyle="bold"
+                android:textSize="25dp"
                 android:textColor="@color/colorWhite" />
 
 
@@ -78,7 +84,9 @@
                 android:background="@drawable/single_item_style"
                 android:onClick="onClickButtons"
                 android:text="Bronx"
-                android:textColor="@color/colorWhite" />
+                android:textColor="@color/colorWhite"
+                android:textStyle="bold"
+                android:textSize="25dp"/>
 
             <Button
                 android:id="@+id/staten_island"
@@ -89,6 +97,8 @@
                 android:background="@drawable/single_item_style"
                 android:onClick="onClickButtons"
                 android:text="Staten Island"
+                android:textStyle="bold"
+                android:textSize="25dp"
                 android:textColor="@color/colorWhite" />
 
         </LinearLayout>

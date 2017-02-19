@@ -17,9 +17,9 @@
     <color name="darkred" type="color">#FFCC0000</color>
     <color name="colorWhite">#FFFFFF</color>
     <color name="yellow">#fcfc0e</color>
+
     <color name="black">#030303</color>
     <color name="black_translucent">#55000000</color>
     <color name="greys">#d6d2d0d0</color>
-
 
 </resources>
