@@ -29,7 +29,7 @@ public class EsllViewHolder extends RecyclerView.ViewHolder {
         tv1.setText(esllData.getSite_name());
         tv2.setText(esllData.getProgram_type());
         tv3.setText(esllData.getGrade_level_age_group());
-        tv4.setText(esllData.getContact_number());
+        tv4.setText(esllData.getBorough_community());
 
 
     }
