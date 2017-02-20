@@ -16,13 +16,12 @@
         android:textStyle="bold"
         android:textSize="25dp"/>
 
-    <FrameLayout
-        android:id="@+id/frag_container"
-        android:background="@drawable/nyork"
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        >
+        android:layout_height="match_parent">
 
-    </FrameLayout>
+    </android.support.v7.widget.RecyclerView>
+
 
 </LinearLayout>
