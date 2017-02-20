@@ -33,7 +33,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
  */
 
 public class YaipFragment extends Fragment {
-    String WORKING = "GOT it";
+
     String NOTWORKING = "Data NOT WORKing";
     String TAG = "Yaip Frag";
     RecyclerView rv;
@@ -41,51 +41,54 @@ public class YaipFragment extends Fragment {
     Retrofit mRetrofit;
     private final String BASE_URL = "https://data.cityofnewyork.us/";
 
-    @Nullable
-    @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        final View view = inflater.inflate(R.layout.fragment_yaip, container, false);
-
-        rv = (RecyclerView) view.findViewById(R.id.recycler_view);
-        adapter = new YaipAdapter();
-        rv.setLayoutManager(new LinearLayoutManager(view.getContext(), LinearLayoutManager.VERTICAL, false));
-        rv.setAdapter(adapter);
-        setUpRetrofit();
-        return view;
-
-
-    }
-
-    public void setUpRetrofit() {
-        mRetrofit = new Retrofit
-                .Builder()
-                .baseUrl(BASE_URL)
-                .addConverterFactory(GsonConverterFactory.create())
-                .build();
-
-        YaipResponse yaipResponse = mRetrofit.create(YaipResponse.class);
-
-        Call<List<Location>> listCall = yaipResponse.LocationData();
-        listCall.enqueue(new Callback<List<Location>>() {
-            @Override
-            public void onResponse(Call<List<Location>> call, Response<List<Location>> response) {
-
-                if (response.isSuccessful()) {
-
-                    List<Location> locations = response.body();
-
-                    adapter.setSchoolsList(locations);
-                }
-            }
-
-            @Override
-            public void onFailure(Call<List<Location>> call, Throwable t) {
-                System.out.print("Not working");
-                Log.d(NOTWORKING, "It is not workig");
-
-            }
-        });
-    }
+//    @Nullable
+//    @Override
+//    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+//        final View view = inflater.inflate(R.layout.fragment_yaip, container, false);
+//
+//        rv = (RecyclerView) view.findViewById(R.id.recycler_view);
+//
+//        adapter = new YaipAdapter();
+//        rv.setLayoutManager(new LinearLayoutManager(view.getContext(), LinearLayoutManager.VERTICAL, false));
+//        rv.setAdapter(adapter);
+//        setUpRetrofit();
+//        return view;
+//
+//
+//    }
+//
+//    public void setUpRetrofit() {
+//        mRetrofit = new Retrofit
+//                .Builder()
+//                .baseUrl(BASE_URL)
+//                .addConverterFactory(GsonConverterFactory.create())
+//                .build();
+//
+//        YaipResponse yaipResponse = mRetrofit.create(YaipResponse.class);
+//
+//        Call<List<Location>> listCall = yaipResponse.LocationData();
+//        listCall.enqueue(new Callback<List<Location>>() {
+//            @Override
+//            public void onResponse(Call<List<Location>> call, Response<List<Location>> response) {
+//
+//                if (response.isSuccessful()) {
+//
+//                    List<Location> locations = response.body();
+//
+//                    adapter.setSchoolsList(locations);
+//
+//
+//                }
+//            }
+//
+//            @Override
+//            public void onFailure(Call<List<Location>> call, Throwable t) {
+//                System.out.print("Not working");
+//                Log.d(NOTWORKING, "It is not workig");
+//
+//            }
+//        });
+//    }
 }
 
 
