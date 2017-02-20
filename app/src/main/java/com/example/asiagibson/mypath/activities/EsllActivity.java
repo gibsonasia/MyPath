@@ -1,22 +1,15 @@
 package com.example.asiagibson.mypath.activities;
 
 import android.app.Activity;
-import android.app.FragmentManager;
-import android.app.FragmentTransaction;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
-import android.widget.Toast;
 
 import com.example.asiagibson.mypath.EsllResponse;
 import com.example.asiagibson.mypath.R;
-import com.example.asiagibson.mypath.fragments.YaipFragment;
 import com.example.asiagibson.mypath.model.EsllData;
-import com.example.asiagibson.mypath.model.Location;
-import com.example.asiagibson.mypath.models.Schools;
 import com.example.asiagibson.mypath.rv.EsllAdapter;
-import com.example.asiagibson.mypath.rv.YaipAdapter;
 
 import java.util.ArrayList;
 import java.util.List;
