@@ -1,5 +1,7 @@
 package com.example.asiagibson.mypath.rv;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.TextView;
@@ -25,11 +27,22 @@ public class EsllViewHolder extends RecyclerView.ViewHolder {
 
     }
 
-    public void bind(EsllData esllData) {
+    public void bind(final EsllData esllData) {
         tv1.setText(esllData.getSite_name());
-        tv2.setText(esllData.getProgram_type());
-        tv3.setText(esllData.getGrade_level_age_group());
-        tv4.setText(esllData.getBorough_community());
+        tv2.setText(esllData.getLocation_1_location());
+
+        tv2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String formattedAddress = "geo:0,0?q=" + esllData.getLocation_1_location().replaceAll(" ", "+");
+                Uri uri = Uri.parse(formattedAddress);
+                Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+                view.getContext().startActivity(intent);
+            }
+        });
+
+        tv3.setText(esllData.getContact_number());
+        tv4.setText(esllData.getProgram());
 
 
     }
