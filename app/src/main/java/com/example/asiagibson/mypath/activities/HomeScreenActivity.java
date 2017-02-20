@@ -174,10 +174,14 @@ public class HomeScreenActivity extends AppCompatActivity {
             public void onClick(View v) {
                 if (nothingSelected || nothingSelected2 || nothingSelected3) {
                     Toast.makeText(submitButton.getContext(), R.string.valid_inputs, Toast.LENGTH_LONG).show();
-                } else if (hasNoGed && isOver25) {
+
+                }
+                if ((!hasHighSchoolOrGed) && (isOver25 || isUnder25)) {
                     Intent intent = new Intent(submitButton.getContext(), FiveBorough.class);
                     startActivity(intent);
-                } else if (hasNoGed && isUnder25) {
+
+                }
+                if (hasHighSchoolOrGed && isUnder25) {
                     Intent intent = new Intent(getBaseContext(), BoroSearchActivity.class);
                     startActivity(intent);
                 }
