@@ -38,8 +38,8 @@
 
 
         <activity android:name=".FiveBorough"></activity>
-        <activity android:name=".activities.BorosEsllActivity"/>
-
+        <activity android:name=".activities.BorosEsllActivity" />
+        <activity android:name=".activities.InterestActivity" />
 
     </application>
 

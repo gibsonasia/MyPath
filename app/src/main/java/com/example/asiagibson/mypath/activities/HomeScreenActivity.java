@@ -176,21 +176,26 @@ public class HomeScreenActivity extends AppCompatActivity {
                     Toast.makeText(submitButton.getContext(), R.string.valid_inputs, Toast.LENGTH_LONG).show();
 
                 }
-                if ((!hasHighSchoolOrGed) && isCitizen && (isOver25 || isUnder25)) {
+
+                 if ((!hasHighSchoolOrGed) && isCitizen  && (isOver25 || isUnder25)) {
                     Intent intent = new Intent(submitButton.getContext(), FiveBorough.class);
                     startActivity(intent);
 
                 }
-                if (hasHighSchoolOrGed && isUnder25) {
+                 if (hasHighSchoolOrGed && isUnder25) {
                     Intent intent = new Intent(getBaseContext(), BoroSearchActivity.class);
                     startActivity(intent);
                 }
 
-                if ((!hasHighSchoolOrGed) && isOver25 && (!isCitizen)) {
+                 if ((!hasHighSchoolOrGed) && isOver25 && (!isCitizen)) {
                 Intent intent = new Intent(submitButton.getContext(),BorosEsllActivity.class);
                     startActivity(intent);
                 }
 
+//                if (hasSomeCollege && isCitizen && (isOver25 || isUnder25)){
+//                    Intent intent = new Intent(submitButton.getContext(),InterestActivity.class);
+//                    startActivity(intent);
+//                }
 
             }
 
