@@ -1,40 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/activity_boro_search"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/nyork"
     android:orientation="vertical"
-    android:padding="10dp"
-    tools:context="com.example.asiagibson.mypath.activities.BoroSearchActivity">
+    android:padding="10dp">
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Interest for You:"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="20dp"
+        android:textColor="@color/colorWhite"
+        android:textStyle="bold"
+        android:textSize="25dp"/>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1">
-
-            <Button
-                android:id="@+id/manhattan"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_margin="@dimen/btn_margin"
-                android:layout_weight="1"
-                android:background="@drawable/single_item_style"
-                android:onClick="onClickButtons"
-                android:text="Manhattan"
-                android:textColor="@color/colorWhite"
-                android:textSize="25dp"
-                android:textStyle="bold" />
-
-
-        </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -48,8 +33,7 @@
                 android:layout_margin="@dimen/btn_margin"
                 android:layout_weight="1"
                 android:background="@drawable/single_item_style"
-                android:onClick="onClickButtons"
-                android:text="Brooklyn"
+                android:text="@string/tech"
                 android:textColor="@color/colorWhite"
                 android:textSize="25dp"
                 android:textStyle="bold" />
@@ -61,8 +45,7 @@
                 android:layout_margin="@dimen/btn_margin"
                 android:layout_weight="1"
                 android:background="@drawable/single_item_style"
-                android:onClick="onClickButtons"
-                android:text="Queens"
+                android:text="@string/construction"
                 android:textColor="@color/colorWhite"
                 android:textSize="25dp"
                 android:textStyle="bold" />
@@ -82,21 +65,7 @@
                 android:layout_margin="@dimen/btn_margin"
                 android:layout_weight="1"
                 android:background="@drawable/single_item_style"
-                android:onClick="onClickButtons"
-                android:text="Bronx"
-                android:textColor="@color/colorWhite"
-                android:textSize="25dp"
-                android:textStyle="bold" />
-
-            <Button
-                android:id="@+id/staten_island"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_margin="@dimen/btn_margin"
-                android:layout_weight="1"
-                android:background="@drawable/single_item_style"
-                android:onClick="onClickButtons"
-                android:text="Staten Island"
+                android:text="@string/certs"
                 android:textColor="@color/colorWhite"
                 android:textSize="25dp"
                 android:textStyle="bold" />
@@ -104,6 +73,5 @@
         </LinearLayout>
 
     </LinearLayout>
-
 
 </LinearLayout>

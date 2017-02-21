@@ -1,5 +1,6 @@
 package com.example.asiagibson.mypath.rv;
 
+import android.content.Context;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -18,11 +19,15 @@ import java.util.List;
 
 public class EsllAdapter extends RecyclerView.Adapter<EsllViewHolder> {
 
+    private final Context context;
     List<EsllData> esllDataList;
 
-    public EsllAdapter() {
+    public EsllAdapter(Context context) {
+        this.context = context;
         esllDataList = new ArrayList<>();
     }
+
+   
 
     public void setEsllDataList(List<EsllData> mEsllDataList) {
         this.esllDataList = mEsllDataList;
