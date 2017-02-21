@@ -7,6 +7,7 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
 import com.example.asiagibson.mypath.R;
@@ -21,12 +22,10 @@ import java.util.List;
 
 public class SchoolsAdapter extends RecyclerView.Adapter<SchoolsAdapter.SchoolVHolder> {
 
-    private Context context;
 
     List<Schools> schoolsList;
 
     public SchoolsAdapter(Context context) {
-        this.context = context;
         schoolsList = new ArrayList<>();
     }
 
@@ -58,10 +57,10 @@ public class SchoolsAdapter extends RecyclerView.Adapter<SchoolsAdapter.SchoolVH
     }
 
 
-    public class SchoolVHolder extends RecyclerView.ViewHolder {
+    public class SchoolVHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
         private Schools school;
         TextView mTvAddress, mTvBorough, mTvContactNumber, mTvProgramSiteName;
-
+        ImageButton mBtnMap;
 
         public SchoolVHolder(View itemView) {
             super(itemView);
@@ -70,26 +69,27 @@ public class SchoolsAdapter extends RecyclerView.Adapter<SchoolsAdapter.SchoolVH
             mTvBorough = (TextView) itemView.findViewById(R.id.tv_borough);
             mTvContactNumber = (TextView) itemView.findViewById(R.id.tv_contact_number);
             mTvProgramSiteName = (TextView) itemView.findViewById(R.id.tv_program_site_name);
+            mBtnMap = (ImageButton) itemView.findViewById(R.id.btn_map);
 
+            mBtnMap.setOnClickListener(this);
         }
 
         public void bind(Schools schools) {
             school = schools;
             mTvAddress.setText(schools.getAddress());
-            mTvAddress.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
-                    String formattedAddress = "geo:0,0?q=" + school.getAddress().replaceAll(" ", "+");
-                    Uri uri = Uri.parse(formattedAddress);
-                    Intent intent = new Intent(Intent.ACTION_VIEW, uri);
-                    view.getContext().startActivity(intent);
-                }
-            });
             mTvBorough.setText(schools.getBorough());
             mTvContactNumber.setText(schools.getContact_number());
             mTvProgramSiteName.setText(schools.getProgram_site_name());
 
         }
 
+        @Override
+        public void onClick(View view) {
+
+            Intent intent = new Intent(android.content.Intent.ACTION_VIEW,
+                    Uri.parse("http://maps.google.co.in/maps?q=" + mTvAddress.getText() + mTvBorough.getText()));
+
+            view.getContext().startActivity(intent);
+        }
     }
 }
