@@ -41,4 +41,9 @@
     <string name="hasGreenCard_id">hasGreenCard_ID</string>
     <string name="hasVisa_id">hasVisa_ID</string>
 
+    <string name="tech">Technology (Software/hardware)</string>
+    <string name="construction">Trade
+        (Carpentry/Electrician)</string>
+    <string name="certs">Certifications &amp;\n Prep Classes</string>
+
 </resources>
