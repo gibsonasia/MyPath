@@ -36,11 +36,12 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Contact number"
-            android:autoLink="phone"
-            android:textColorLink="@color/light_blue"
             android:textColor="@color/colorWhite"
             android:textSize="20dp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:autoLink="phone"
+            android:clickable="true"
+            android:linksClickable="true"/>
 
         <TextView
             android:id="@+id/tv_borough"
@@ -60,11 +61,11 @@
         android:gravity="center_vertical">
 
         <ImageButton
-            android:id="@+id/btn_call"
+            android:id="@+id/btn_map"
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:background="@drawable/btn_call_style"
             android:scaleType="fitXY"
-            android:src="@drawable/call" />
+            android:src="@drawable/map" />
     </LinearLayout>
 </LinearLayout>
