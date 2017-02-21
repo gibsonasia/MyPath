@@ -34,7 +34,7 @@ public class YaipViewHolder extends RecyclerView.ViewHolder implements View.OnCl
 
     public void bind(final Location location) {
 
-        textView.setText("Program type" + location.getProgram_type());
+        textView.setText("Program type: " + "\n" + location.getProgram_type() +"\n" + "For Young Adults");
         mTv2.setText(location.getContact_number());
         mTv3.setText(location.getLocation_1_location());
 
