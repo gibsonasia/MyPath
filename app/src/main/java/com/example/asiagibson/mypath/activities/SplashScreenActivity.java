@@ -18,9 +18,9 @@ public class SplashScreenActivity extends AppCompatActivity {
         setContentView(R.layout.splash_activity);
 
 
-        Animation animation = AnimationUtils.loadAnimation(this, R.anim.anim_move_up);
-        ImageView imageView = (ImageView) findViewById(R.id.path_icon);
-        imageView.setAnimation(animation);
+//        Animation animation = AnimationUtils.loadAnimation(this, R.anim.anim_move_up);
+//        ImageView imageView = (ImageView) findViewById(R.id.path_icon);
+//        imageView.setAnimation(animation);
 
 
         Handler handler = new Handler();
@@ -31,7 +31,7 @@ public class SplashScreenActivity extends AppCompatActivity {
                 finish();
 //
             }
-        }, 6000);
+        }, 12000);
 
 
 
