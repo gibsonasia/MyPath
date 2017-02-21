@@ -35,12 +35,14 @@
             android:id="@+id/esll_tv3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:autoLink="phone"
             android:text="text 4"
             android:textColor="@color/colorWhite"
-            android:textColorLink="@color/light_blue"
             android:textSize="20dp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:autoLink="phone"
+            android:clickable="true"
+            android:linksClickable="true"
+            />
 
         <TextView
             android:id="@+id/esll_tv4"
