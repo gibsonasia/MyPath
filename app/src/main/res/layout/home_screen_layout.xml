@@ -205,6 +205,7 @@
                 android:layout_gravity="center"
                 android:layout_marginTop="10dp"
                 android:background="@drawable/button_border"
+                android:foreground="?android:attr/selectableItemBackground"
                 android:shadowRadius="30"
                 android:text="@string/submit_text"
                 android:textColor="@color/colorWhite"
