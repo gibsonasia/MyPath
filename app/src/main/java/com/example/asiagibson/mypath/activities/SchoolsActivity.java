@@ -1,4 +1,4 @@
-package com.example.asiagibson.mypath;
+package com.example.asiagibson.mypath.activities;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -6,8 +6,9 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.widget.Toast;
 
+import com.example.asiagibson.mypath.R;
 import com.example.asiagibson.mypath.adapters.SchoolsAdapter;
-import com.example.asiagibson.mypath.models.Schools;
+import com.example.asiagibson.mypath.model.Schools;
 import com.example.asiagibson.mypath.network.SchoolsResponse;
 
 import java.util.ArrayList;

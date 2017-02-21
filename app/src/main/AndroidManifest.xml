@@ -13,14 +13,14 @@
 
         android:theme="@style/AppTheme">
 
-        <activity android:name=".SchoolsActivity"></activity>
+        <activity android:name=".activities.SchoolsActivity"></activity>
 
 
         <activity
             android:name=".activities.HomeScreenActivity"
             android:configChanges="orientation"
             android:screenOrientation="portrait" />
-        <activity android:name=".SplashScreenActivity">
+        <activity android:name=".activities.SplashScreenActivity">
 
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -36,7 +36,7 @@
         <activity android:name=".activities.BoroSearchActivity" />
 
 
-        <activity android:name=".FiveBorough"></activity>
+        <activity android:name=".activities.FiveBorough"></activity>
         <activity android:name=".activities.BorosEsllActivity" />
         <activity android:name=".activities.InterestActivity" />
 

@@ -1,6 +1,6 @@
 package com.example.asiagibson.mypath.network;
 
-import com.example.asiagibson.mypath.models.Schools;
+import com.example.asiagibson.mypath.model.Schools;
 
 import java.util.List;
 

@@ -11,7 +11,7 @@ import android.widget.ImageButton;
 import android.widget.TextView;
 
 import com.example.asiagibson.mypath.R;
-import com.example.asiagibson.mypath.models.Schools;
+import com.example.asiagibson.mypath.model.Schools;
 
 import java.util.ArrayList;
 import java.util.List;

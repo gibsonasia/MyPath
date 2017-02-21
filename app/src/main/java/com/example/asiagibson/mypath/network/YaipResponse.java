@@ -1,4 +1,4 @@
-package com.example.asiagibson.mypath;
+package com.example.asiagibson.mypath.network;
 
 import com.example.asiagibson.mypath.model.Location;
 

@@ -1,12 +1,12 @@
-package com.example.asiagibson.mypath;
+package com.example.asiagibson.mypath.activities;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
-import com.example.asiagibson.mypath.activities.YaipDataActivity;
-import com.example.asiagibson.mypath.models.Schools;
+import com.example.asiagibson.mypath.R;
+import com.example.asiagibson.mypath.activities.SchoolsActivity;
 
 /**
  * Created by Nesada Koca on 2/18/2017.

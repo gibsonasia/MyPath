@@ -1,4 +1,4 @@
-package com.example.asiagibson.mypath.models;
+package com.example.asiagibson.mypath.model;
 
 /**
  * Created by Nesada Koca on 2/18/2017.

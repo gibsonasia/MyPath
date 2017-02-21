@@ -7,7 +7,7 @@ import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 
 import com.example.asiagibson.mypath.R;
-import com.example.asiagibson.mypath.YaipResponse;
+import com.example.asiagibson.mypath.network.YaipResponse;
 import com.example.asiagibson.mypath.model.Location;
 import com.example.asiagibson.mypath.rv.YaipAdapter;
 

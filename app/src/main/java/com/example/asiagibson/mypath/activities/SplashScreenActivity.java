@@ -1,4 +1,4 @@
-package com.example.asiagibson.mypath;
+package com.example.asiagibson.mypath.activities;
 
 import android.content.Intent;
 import android.os.Handler;
@@ -8,7 +8,7 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 
-import com.example.asiagibson.mypath.activities.HomeScreenActivity;
+import com.example.asiagibson.mypath.R;
 
 public class SplashScreenActivity extends AppCompatActivity {
 
